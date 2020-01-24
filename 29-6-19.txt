@@ -1,0 +1,21 @@
+Pattern p=Pattern.compile("<(.*)>")
+
+
+
+
+
+
+
+// Write your Checker class here
+class Checker implements Comparator<Player>
+{
+public int compare(Player a,Player b)
+{
+if (a.score -b.score ==0)
+{
+return a.name.compareTo(b.name);
+}
+else
+return -1*(a.score-b.score);
+}
+}
